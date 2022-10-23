@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CrossplatformsTasks.Lab2Task
+﻿namespace CrossplatformsTasks.Lab2Task
 {
     public static class Lab2
     {
@@ -77,7 +71,7 @@ namespace CrossplatformsTasks.Lab2Task
 
                 CalculateSteps(inputNumberOfStairs, numbersWrittenOnStairs);
 
-                Console.WriteLine($"\nFile is prepared.");
+                Console.WriteLine("\nFile is prepared.");
                 break;
             }
         }
