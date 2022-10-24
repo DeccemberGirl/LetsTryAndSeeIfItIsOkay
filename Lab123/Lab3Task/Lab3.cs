@@ -1,4 +1,4 @@
-﻿namespace CrossplatformsTasks.Lab3Task
+﻿namespace Lab123.Lab3Task
 {
     public static class Lab3
     {
@@ -136,7 +136,7 @@
             }
         }
 
-        public static void PrepareResults(string filename, int numberOfFriends)
+        private static void PrepareResults(string filename, int numberOfFriends)
         {
             using (StreamWriter sw = !File.Exists(filename)
                 ? File.CreateText(filename)
