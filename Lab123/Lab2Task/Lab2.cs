@@ -1,4 +1,4 @@
-﻿namespace CrossplatformsTasks.Lab2Task
+﻿namespace Lab123.Lab2Task
 {
     public static class Lab2
     {
@@ -114,7 +114,7 @@
             PrepareResults("C:\\Users\\decce\\Desktop\\PC\\4 course\\Crossplatforms\\Lab1\\Lab2Task\\OUTPUT.txt", sum, resultList);
         }
 
-        public static void PrepareResults(string filename, int sum, List<int> stairs)
+        private static void PrepareResults(string filename, int sum, List<int> stairs)
         {
             stairs.Reverse();
 

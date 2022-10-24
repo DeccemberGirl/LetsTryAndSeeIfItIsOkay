@@ -1,6 +1,6 @@
 ﻿using System.Numerics;
 
-namespace CrossplatformsTasks.Lab1Task
+namespace Lab123.Lab1Task
 {
     public static class Lab1
     {
@@ -59,6 +59,8 @@ namespace CrossplatformsTasks.Lab1Task
                 }
 
                 var numberOfPossibleRoadBuildings = CalculateRoadBuildingsBetweenCentres(inputNumber);
+                
+                PrepareResults("C:\\Users\\decce\\Desktop\\PC\\4 course\\Crossplatforms\\Lab1\\Lab3Task\\OUTPUT.txt", numberOfPossibleRoadBuildings);
 
                 Console.WriteLine($"\nNumber of possible road buildings between {inputNumber} centres is {numberOfPossibleRoadBuildings}.");
                 break;
@@ -73,6 +75,16 @@ namespace CrossplatformsTasks.Lab1Task
         private static BigInteger CalculateRoadBuildingsBetweenCentres(int inputNumber)
         {
             return BigInteger.Pow(3, inputNumber * (inputNumber - 1) / 2);
+        }
+
+        private static void PrepareResults(string filename, BigInteger numberOfPossibleRoadBuildings)
+        {
+            using (StreamWriter sw = !File.Exists(filename)
+                ? File.CreateText(filename)
+                : File.AppendText(filename))
+            {
+                sw.WriteLine(numberOfPossibleRoadBuildings.ToString());
+            }
         }
     }
 }

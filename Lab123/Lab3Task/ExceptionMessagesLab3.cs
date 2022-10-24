@@ -1,4 +1,4 @@
-﻿namespace CrossplatformsTasks.Lab3Task
+﻿namespace Lab123.Lab3Task
 {
     public static class ExceptionMessagesLab3
     {
